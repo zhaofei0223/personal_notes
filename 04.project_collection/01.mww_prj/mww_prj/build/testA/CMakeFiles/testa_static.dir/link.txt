@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testa_static.dir/src/test_a.cpp.o  -o ../../bin/testa_static   -L/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/lib  -Wl,-rpath,/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/lib ../../lib/libmodulea_static.a 

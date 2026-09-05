@@ -1,0 +1,23 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/testA/src/test_a.cpp" "/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/build/testA/CMakeFiles/testa_shared.dir/src/test_a.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../testA/include"
+  "../include"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/build/moduleA/CMakeFiles/modulea_shared.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libmoduleb_static.a  CMakeFiles/moduleb_static.dir/src/module_b.cpp.o
+/usr/bin/ranlib ../../lib/libmoduleb_static.a

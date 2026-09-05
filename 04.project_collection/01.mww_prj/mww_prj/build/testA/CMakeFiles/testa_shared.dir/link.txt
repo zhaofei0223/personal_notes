@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testa_shared.dir/src/test_a.cpp.o  -o ../../bin/testa_shared   -L/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/lib  -Wl,-rpath,/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/lib ../../lib/libmodulea_shared.so 

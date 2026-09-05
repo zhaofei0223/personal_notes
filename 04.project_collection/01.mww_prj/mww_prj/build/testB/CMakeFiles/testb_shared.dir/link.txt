@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testb_shared.dir/src/test_b.cpp.o  -o ../../bin/testb_shared   -L/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/lib  -Wl,-rpath,/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/lib ../../lib/libmoduleb_shared.so 

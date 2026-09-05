@@ -1,0 +1,248 @@
+Note: Google Test filter = PersistentplayerOtaFixture.DISABLED_Persistentplayer_simple_playtest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PersistentplayerOtaFixture
+[ RUN      ] PersistentplayerOtaFixture.DISABLED_Persistentplayer_simple_playtest
+Could not open module param file '/sys/module/mali/parameters/large_page_conf'
+
+(process:9889): GLib-CRITICAL **: 17:06:16.466: g_path_get_basename: assertion 'file_name != NULL' failed
+[0/28]: /usr/lib/libglog-runtime-env.so+0x742 (print_backtrace_symbol+0x3d) [0xb613a742]
+[1/28]: /usr/lib/libglog-runtime-env.so+0x8b2 (g_log_default_handler+0x91) [0xb613a8b2]
+[2/28]: /lib/libglib-2.0.so.0+0x4b7e0 (g_logv+0x14f) [0xb5caa7e0]
+[3/28]: /lib/libglib-2.0.so.0+0x4b9ea (g_log+0x25) [0xb5caa9ea]
+[4/28]: /lib/libglib-2.0.so.0+0x4c410 (g_return_if_fail_warning+0x13) [0xb5cab410]
+[5/28]: /lib/libglib-2.0.so.0+0x384b2 (g_path_get_basename+0x8d) [0xb5c974b2]
+[6/28]: /lib/libglib-2.0.so.0+0x5524c (g_option_context_parse+0x597) [0xb5cb424c]
+[7/28]: /lib/libgstreamer-1.0.so.0+0x2b97a (gst_init_check+0x75) [0xb5d8597a]
+[8/28]: /lib/libgstreamer-1.0.so.0+0x2ba08 (gst_init+0x27) [0xb5d85a08]
+[9/28]: /lib/libplusplayer-core.so+0x10cce (_ZN10plusplayer8gst_util7GstInitERKN4Json5ValueE+0x1b1) [0xb54edcce]
+[10/28]: /lib/libpersistentplayer.so+0x7af36 (_ZN10plusplayer5pconf15LoadIniPropertyERKN4Json5ValueE+0x1d) [0xb5ec5f36]
+[11/28]: /lib/libpersistentplayer.so+0x7b57a (_ZN10plusplayer5pconf11LoadIniFileEv+0x16d) [0xb5ec657a]
+[12/28]: /lib/libc.so.6+0x82f3c (+0xb523ef3c) [0xb523ef3c]
+[13/28]: /lib/libc.so.6+0x82fe0 (pthread_once+0x1c) [0xb523efe0]
+[14/28]: /lib/libpersistentplayer.so+0x80ec8 (_ZN10plusplayer16PersistentPlayerC1Ev+0x96b) [0xb5ecbec8]
+[15/28]: /lib/libpersistentplayer.so+0xc0ac6 (_ZN10plusplayer10PlusPlayer6CreateENS_12PlayerTypeExE+0x15) [0xb5f0bac6]
+[16/28]: plusplayer_ut+0x3d9222 (_ZN5utils7Utility22GetCreatedPlusPlayerExEN10plusplayer12PlayerTypeExE+0x21) [0x81b222]
+[17/28]: plusplayer_ut+0x3db3b2 (_ZN5utils7Utility21GetOpenedPlusPlayerExERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPN10plusplayer13EventListenerEPvNS8_12PlayerTypeExE+0x25) [0x81d3b2]
+[18/28]: plusplayer_ut+0x261936 (_ZN73PersistentplayerOtaFixture_DISABLED_Persistentplayer_simple_playtest_Test8TestBodyEv+0x89) [0x6a3936]
+[19/28]: /lib/libgtest.so.1.12.1+0x4185a (_ZN7testing8internal35HandleExceptionsInMethodIfSupportedINS_4TestEvEET0_PT_MS4_FS3_vEPKc+0x5d) [0xb55eb85a]
+[20/28]: /lib/libgtest.so.1.12.1+0x34e48 (_ZN7testing4Test3RunEv+0xa3) [0xb55dee48]
+[21/28]: /lib/libgtest.so.1.12.1+0x34fba (_ZN7testing8TestInfo3RunEv+0x149) [0xb55defba]
+[22/28]: /lib/libgtest.so.1.12.1+0x35306 (_ZN7testing9TestSuite3RunEv+0xe9) [0xb55df306]
+[23/28]: /lib/libgtest.so.1.12.1+0x3ad9c (_ZN7testing8internal12UnitTestImpl11RunAllTestsEv+0x2ef) [0xb55e4d9c]
+[24/28]: /lib/libgtest.so.1.12.1+0x3b0f0 (_ZN7testing8UnitTest3RunEv+0xbf) [0xb55e50f0]
+[25/28]: plusplayer_ut+0x15f1a0 (main+0x7f) [0x5a11a0]
+[26/28]: /lib/libc.so.6+0x24b1c (+0xb51e0b1c) [0xb51e0b1c]
+[27/28]: /lib/libc.so.6+0x24c34 (__libc_start_main+0xd0) [0xb51e0c34]
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:17.027: gst_pad_create_stream_id_internal: assertion 'parent->numsrcpads <= 1 || stream_id' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:17.029: gst_event_new_stream_start: assertion 'stream_id != NULL' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:17.029: gst_event_set_group_id: assertion 'event != NULL' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:17.029: gst_pad_push_event: assertion 'GST_IS_EVENT (event)' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:18.358: gst_mini_object_unref: assertion 'mini_object != NULL' failed
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.381: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<tv30demux_live:video> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.382: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<tv30demux_live:video> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.384: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<tv30videobin:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.384: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<tv30videobin:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.384: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<sink:proxypad1> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.384: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<sink:proxypad1> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.384: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<queue_live_video:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.384: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<queue_live_video:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.386: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<queue_live_video:src> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.387: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<queue_live_video:src> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.388: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<ffdemux_live_video:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.389: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<ffdemux_live_video:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:18.407: gst_mini_object_unref: assertion 'mini_object != NULL' failed
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.420: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<tv30demux_live:audio> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.420: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<tv30demux_live:audio> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.420: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<tv30audiobin:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.420: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<tv30audiobin:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.420: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<sink:proxypad2> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.420: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<sink:proxypad2> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.421: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<queue_live_audio:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.421: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<queue_live_audio:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.421: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<queue_live_audio:src> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.421: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<queue_live_audio:src> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.421: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<ffdemux_live_audio:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:18.421: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<ffdemux_live_audio:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:18.435: gst_debug_log_full_valist: assertion 'category != NULL' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:18.647: gst_debug_log_full_valist: assertion 'category != NULL' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:18.647: gst_debug_log_full_valist: assertion 'category != NULL' failed
+
+(<unknown>:9889): GLib-GObject-CRITICAL **: 17:06:18.994: g_object_set_is_valid_property: object class 'GstMmaudioSink' has no property named 'video-decoder-id'
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.046: gst_pad_probe_info_get_buffer: assertion 'info->type & GST_PAD_PROBE_TYPE_BUFFER' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.047: gst_pad_probe_info_get_buffer: assertion 'info->type & GST_PAD_PROBE_TYPE_BUFFER' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.047: gst_pad_probe_info_get_buffer: assertion 'info->type & GST_PAD_PROBE_TYPE_BUFFER' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.049: gst_pad_probe_info_get_buffer: assertion 'info->type & GST_PAD_PROBE_TYPE_BUFFER' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.050: gst_buffer_map_range: assertion 'GST_IS_BUFFER (buffer)' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.050: gst_buffer_unmap: assertion 'GST_IS_BUFFER (buffer)' failed
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.151: ../subprojects/gstreamer/gst/gstpad.c:5397:store_sticky_event:<omxaudiodec0:src> Sticky event misordering, got 'segment' before 'caps'
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.151: gst_pad_probe_info_get_buffer: assertion 'info->type & GST_PAD_PROBE_TYPE_BUFFER' failed
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.168: ../subprojects/gstreamer/gst/gstpad.c:5397:store_sticky_event:<mmaudiosink0:sink> Sticky event misordering, got 'segment' before 'caps'
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.181: gst_mini_object_copy: assertion 'mini_object != NULL' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.181: gst_caps_get_structure: assertion 'GST_IS_CAPS (caps)' failed
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.181: ../subprojects/gstreamer/gst/gstpad.c:5397:store_sticky_event:<omxuhdvideodec0:src> Sticky event misordering, got 'segment' before 'caps'
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.182: gst_pad_probe_info_get_buffer: assertion 'info->type & GST_PAD_PROBE_TYPE_BUFFER' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.182: gst_caps_get_structure: assertion 'GST_IS_CAPS (caps)' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.182: gst_structure_get_int: assertion 'structure != NULL' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.182: gst_structure_get_int: assertion 'structure != NULL' failed
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.195: ../subprojects/gstreamer/gst/gstpad.c:5397:store_sticky_event:<directvideosink:sink> Sticky event misordering, got 'segment' before 'caps'
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.195: gst_pad_probe_info_get_buffer: assertion 'info->type & GST_PAD_PROBE_TYPE_BUFFER' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.353: gst_clock_get_time: assertion 'GST_IS_CLOCK (clock)' failed
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.909: gst_mini_object_unref: assertion 'mini_object != NULL' failed
+[0/47]: /usr/lib/libglog-runtime-env.so+0x742 (print_backtrace_symbol+0x3d) [0xb613a742]
+[1/47]: /usr/lib/libglog-runtime-env.so+0x8b2 (g_log_default_handler+0x91) [0xb613a8b2]
+[2/47]: /lib/libglib-2.0.so.0+0x4b7e0 (g_logv+0x14f) [0xb5caa7e0]
+[3/47]: /lib/libglib-2.0.so.0+0x4b9ea (g_log+0x25) [0xb5caa9ea]
+[4/47]: /lib/libglib-2.0.so.0+0x4c410 (g_return_if_fail_warning+0x13) [0xb5cab410]
+[5/47]: /usr/lib/gstreamer-1.0/libgstffmpegtv30.so+0x69e8 (+0xad8869e8) [0xad8869e8]
+[6/47]: /lib/libgobject-2.0.so.0+0x2e3a0 (g_type_create_instance+0x183) [0xb4f463a0]
+[7/47]: /lib/libgobject-2.0.so.0+0x1bee8 (+0xb4f33ee8) [0xb4f33ee8]
+[8/47]: /lib/libgobject-2.0.so.0+0x1cf4e (g_object_new_with_properties+0xfd) [0xb4f34f4e]
+[9/47]: /lib/libgstreamer-1.0.so.0+0x527b0 (gst_element_factory_create_with_properties+0x43) [0xb5dac7b0]
+[10/47]: /lib/libgstreamer-1.0.so.0+0x52c5e (gst_element_factory_create_valist+0x2e9) [0xb5dacc5e]
+[11/47]: /lib/libgstreamer-1.0.so.0+0x53008 (gst_element_factory_make_valist+0x47) [0xb5dad008]
+[12/47]: /lib/libgstreamer-1.0.so.0+0x5318e (gst_element_factory_make_full+0x21) [0xb5dad18e]
+[13/47]: /lib/libtracksource.so+0x77372 (_ZN10plusplayer14OtaTrackSource15PipelineBuilder17CreateCaptionbin_Ev+0xa1) [0xb557f372]
+[14/47]: /lib/libtracksource.so+0x6ed90 (_ZN10plusplayer14OtaTrackSource15CallbackManager16DemuxPadAddedCb_EP11_GstElementP7_GstPadPv+0x9f) [0xb5576d90]
+[15/47]: /lib/libgobject-2.0.so.0+0xddb4 (g_cclosure_marshal_VOID__OBJECTv+0x43) [0xb4f25db4]
+[16/47]: /lib/libgobject-2.0.so.0+0x26880 (+0xb4f3e880) [0xb4f3e880]
+[17/47]: /lib/libgobject-2.0.so.0+0x26a10 (g_signal_emit_valist+0x23) [0xb4f3ea10]
+[18/47]: /lib/libgobject-2.0.so.0+0x26a4a (g_signal_emit+0x25) [0xb4f3ea4a]
+[19/47]: /lib/libgstreamer-1.0.so.0+0x4eb36 (gst_element_add_pad+0x1fd) [0xb5da8b36]
+[20/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x3f460 (_ZN7CFeedMM12m_PushBufferEP10_GstBufferb+0x103) [0xae74f460]
+[21/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x3f6d2 (_ZN7CFeedMM16m_BufferDeliveryEPcjb+0x3d) [0xae74f6d2]
+[22/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x3f7c2 (_ZN7CFeedMM20m_PushMediaSegBufferEPN12CMediaBuffer11SBufferInfoE+0xc9) [0xae74f7c2]
+[23/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x42798 (_ZN7CFeedMM13m_ProcessFeedEPKN11CLctSession6SParamE+0x5bb) [0xae752798]
+[24/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x439f2 (_ZN14CCollectMMCore12sm_CbContentEPvPKN11CLctSession6SParamE+0xd) [0xae7539f2]
+[25/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x4878a (_ZN16CLctSessionMedia12m_PushBufferEN11CLctSession9EDataTypeE+0xc5) [0xae75878a]
+[26/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x48a8c (_ZN16CLctSessionMedia16m_ProcessGeneralEPcj+0x1f3) [0xae758a8c]
+[27/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x49778 (_ZN11CLctSession18sm_CbReceivePacketEPvhP10_GstBufferi+0x3f) [0xae759778]
+[28/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x25660 (_ZN7CBridge8PushDataEhP10_GstBuffer+0xa7) [0xae735660]
+[29/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x28eb6 (_ZN10CRebuilder8PushDataEhP10_GstBuffer+0x21) [0xae738eb6]
+[30/47]: /usr/lib/gstreamer-1.0/libgsttv30demux.so+0x28f4c (_ZN12GstTv30Demux10sm_CbChainEP7_GstPadP10_GstObjectP10_GstBuffer+0x5b) [0xae738f4c]
+[31/47]: /lib/libgstreamer-1.0.so.0+0x6906e (+0xb5dc306e) [0xb5dc306e]
+[32/47]: /lib/libgstreamer-1.0.so.0+0x6ac9e (+0xb5dc4c9e) [0xb5dc4c9e]
+[33/47]: /lib/libgstreamer-1.0.so.0+0x70ea0 (gst_pad_push+0x67) [0xb5dcaea0]
+[34/47]: /lib/libgstreamer-1.0.so.0+0x58772 (gst_proxy_pad_chain_default+0x41) [0xb5db2772]
+[35/47]: /lib/libgstreamer-1.0.so.0+0x6906e (+0xb5dc306e) [0xb5dc306e]
+[36/47]: /lib/libgstreamer-1.0.so.0+0x6ac9e (+0xb5dc4c9e) [0xb5dc4c9e]
+[37/47]: /lib/libgstreamer-1.0.so.0+0x70ea0 (gst_pad_push+0x67) [0xb5dcaea0]
+[38/47]: /usr/lib/gstreamer-1.0/libgsttv30bridge.so+0xfbe6 (_ZN13GstTv30Bridge10sm_CbChainEP7_GstPadP10_GstObjectP10_GstBuffer+0x429) [0xae7d4be6]
+[39/47]: /lib/libgstreamer-1.0.so.0+0x6906e (+0xb5dc306e) [0xb5dc306e]
+[40/47]: /lib/libgstreamer-1.0.so.0+0x6ac9e (+0xb5dc4c9e) [0xb5dc4c9e]
+[41/47]: /lib/libgstreamer-1.0.so.0+0x70ea0 (gst_pad_push+0x67) [0xb5dcaea0]
+[42/47]: /lib/libgstbase-1.0.so.0+0x4072a (+0xb37fe72a) [0xb37fe72a]
+[43/47]: /lib/libgstreamer-1.0.so.0+0x97f04 (+0xb5df1f04) [0xb5df1f04]
+[44/47]: /lib/libglib-2.0.so.0+0x68538 (+0xb5cc7538) [0xb5cc7538]
+[45/47]: /lib/libglib-2.0.so.0+0x66ed2 (+0xb5cc5ed2) [0xb5cc5ed2]
+[46/47]: /lib/libc.so.6+0x7dc24 (+0xb5239c24) [0xb5239c24]
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.918: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<tv30demux_live:caption> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.919: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<tv30demux_live:caption> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.919: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<tv30captionbin:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.919: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<tv30captionbin:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.919: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<sink:proxypad3> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.919: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<sink:proxypad3> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.919: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<queue_live_caption:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.919: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<queue_live_caption:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.927: ../subprojects/gstreamer/gst/gstpad.c:4731:gst_pad_push_data:<queue_live_caption:src> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.927: ../subprojects/gstreamer/gst/gstpad.c:4736:gst_pad_push_data:<queue_live_caption:src> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.928: ../subprojects/gstreamer/gst/gstpad.c:4458:gst_pad_chain_data_unchecked:<ffdemux_live_caption:sink> Got data flow before stream-start event
+
+(<unknown>:9889): GStreamer-WARNING **: 17:06:19.928: ../subprojects/gstreamer/gst/gstpad.c:4463:gst_pad_chain_data_unchecked:<ffdemux_live_caption:sink> Got data flow before segment event
+
+(<unknown>:9889): GStreamer-CRITICAL **: 17:06:19.936: gst_debug_log_full_valist: assertion 'category != NULL' failed
+
+(<unknown>:9889): GLib-GObject-CRITICAL **: 17:06:29.376: g_object_set_is_valid_property: object class 'GstMmaudioSink' has no property named 'video-decoder-id'
+[0/22]: /usr/lib/libglog-runtime-env.so+0x742 (print_backtrace_symbol+0x3d) [0xb613a742]
+[1/22]: /usr/lib/libglog-runtime-env.so+0x8b2 (g_log_default_handler+0x91) [0xb613a8b2]
+[2/22]: /lib/libglib-2.0.so.0+0x4b7e0 (g_logv+0x14f) [0xb5caa7e0]
+[3/22]: /lib/libglib-2.0.so.0+0x4b9ea (g_log+0x25) [0xb5caa9ea]
+[4/22]: /lib/libgobject-2.0.so.0+0x1ddc8 (g_object_set_valist+0x22f) [0xb4f35dc8]
+[5/22]: /lib/libgobject-2.0.so.0+0x1dfde (g_object_set+0x2d) [0xb4f35fde]
+[6/22]: /lib/libtrackrenderer.so+0x832ee (_ZN10plusplayer13trackrenderer13TrackRenderer18ResourceController33UnsetVideoDecoderToAudioRenderer_Ev+0x4d) [0xb471b2ee]
+[7/22]: /lib/libtrackrenderer.so+0x7a186 (_ZN10plusplayer13trackrenderer13TrackRenderer18PlaybackController4StopEv+0xcd) [0xb4712186]
+[8/22]: /lib/libtrackrenderer.so+0x98392 (trackrenderer_stop+0xd) [0xb4730392]
+[9/22]: /lib/libplusplayer-core.so+0x1595a (_ZN10plusplayer20TrackRendererAdapter4StopEv+0xd) [0xb54f295a]
+[10/22]: /lib/libpersistentplayer.so+0x9f7e6 (+0xb5eea7e6) [0xb5eea7e6]
+[11/22]: /lib/libpersistentplayer.so+0x7eed6 (_ZN10plusplayer16PersistentPlayer18PlaybackController4StopEv+0x59d) [0xb5ec9ed6]
+[12/22]: plusplayer_ut+0x261c22 (_ZN73PersistentplayerOtaFixture_DISABLED_Persistentplayer_simple_playtest_Test8TestBodyEv+0x375) [0x6a3c22]
+[13/22]: /lib/libgtest.so.1.12.1+0x4185a (_ZN7testing8internal35HandleExceptionsInMethodIfSupportedINS_4TestEvEET0_PT_MS4_FS3_vEPKc+0x5d) [0xb55eb85a]
+[14/22]: /lib/libgtest.so.1.12.1+0x34e48 (_ZN7testing4Test3RunEv+0xa3) [0xb55dee48]
+[15/22]: /lib/libgtest.so.1.12.1+0x34fba (_ZN7testing8TestInfo3RunEv+0x149) [0xb55defba]
+[16/22]: /lib/libgtest.so.1.12.1+0x35306 (_ZN7testing9TestSuite3RunEv+0xe9) [0xb55df306]
+[17/22]: /lib/libgtest.so.1.12.1+0x3ad9c (_ZN7testing8internal12UnitTestImpl11RunAllTestsEv+0x2ef) [0xb55e4d9c]
+[18/22]: /lib/libgtest.so.1.12.1+0x3b0f0 (_ZN7testing8UnitTest3RunEv+0xbf) [0xb55e50f0]
+[19/22]: plusplayer_ut+0x15f1a0 (main+0x7f) [0x5a11a0]
+[20/22]: /lib/libc.so.6+0x24b1c (+0xb51e0b1c) [0xb51e0b1c]
+[21/22]: /lib/libc.so.6+0x24c34 (__libc_start_main+0xd0) [0xb51e0c34]
+eglGetDisplay [EGL_DBG]: eglGetDisplay:2191, Winsys [tizen] path
+[       OK ] PersistentplayerOtaFixture.DISABLED_Persistentplayer_simple_playtest (13878 ms)
+[----------] 1 test from PersistentplayerOtaFixture (13882 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13885 ms total)
+[  PASSED  ] 1 test.

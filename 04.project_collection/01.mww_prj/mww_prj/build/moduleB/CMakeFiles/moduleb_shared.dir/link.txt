@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libmoduleb_shared.so -o ../../lib/libmoduleb_shared.so CMakeFiles/moduleb_shared.dir/src/module_b.cpp.o 

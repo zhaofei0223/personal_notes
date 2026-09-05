@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/module_b_common.h
+iostream
+-
+
+../testB/include/test_b.h
+iostream
+-
+
+/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/testB/src/test_b.cpp
+test_b.h
+/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/testB/src/test_b.h
+module_b_common.h
+/root/zhaof_works/personal_repository/personal_repository/03.project_collection/01.mww_prj/mww_prj/testB/src/module_b_common.h
+

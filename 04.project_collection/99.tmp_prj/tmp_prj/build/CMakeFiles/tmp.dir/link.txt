@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/tmp.dir/src/tmp.cpp.o  -o ../bin/tmp 
+/usr/bin/c++ CMakeFiles/tmp.dir/src/tmp.cpp.o -o /root/zhaof_space/personal_notes/personal_notes/04.project_collection/99.tmp_prj/tmp_prj/bin/tmp 

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "../bin/tmp"
-  "../bin/tmp.pdb"
+  "/root/zhaof_space/personal_notes/personal_notes/04.project_collection/99.tmp_prj/tmp_prj/bin/tmp"
+  "/root/zhaof_space/personal_notes/personal_notes/04.project_collection/99.tmp_prj/tmp_prj/bin/tmp.pdb"
   "CMakeFiles/tmp.dir/src/tmp.cpp.o"
+  "CMakeFiles/tmp.dir/src/tmp.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

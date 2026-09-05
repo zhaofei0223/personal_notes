@@ -1,4 +1,4 @@
-# Install script for directory: /root/zhaof_works/personal_repository/personal_repository/04.project_collection/99.tmp_prj/tmp_prj
+# Install script for directory: /root/zhaof_space/personal_notes/personal_notes/04.project_collection/99.tmp_prj/tmp_prj
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,6 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
@@ -45,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/zhaof_works/personal_repository/personal_repository/04.project_collection/99.tmp_prj/tmp_prj/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/zhaof_space/personal_notes/personal_notes/04.project_collection/99.tmp_prj/tmp_prj/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
